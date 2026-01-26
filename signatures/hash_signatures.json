@@ -1,0 +1,100 @@
+[
+  {
+    "name": "MD5",
+    "regex": "^[a-f0-9]{32}$",
+    "description": "Message Digest Algorithm 5",
+    "category": "Standard Hash",
+    "confidence_weight": 0.8
+  },
+  {
+    "name": "SHA-1",
+    "regex": "^[a-f0-9]{40}$",
+    "description": "Secure Hash Algorithm 1",
+    "category": "Standard Hash",
+    "confidence_weight": 0.9
+  },
+  {
+    "name": "SHA-224",
+    "regex": "^[a-f0-9]{56}$",
+    "description": "Secure Hash Algorithm 2 (224-bit)",
+    "category": "SHA-2 Family",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "SHA-256",
+    "regex": "^[a-f0-9]{64}$",
+    "description": "Secure Hash Algorithm 2 (256-bit)",
+    "category": "SHA-2 Family",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "SHA-384",
+    "regex": "^[a-f0-9]{96}$",
+    "description": "Secure Hash Algorithm 2 (384-bit)",
+    "category": "SHA-2 Family",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "SHA-512",
+    "regex": "^[a-f0-9]{128}$",
+    "description": "Secure Hash Algorithm 2 (512-bit)",
+    "category": "SHA-2 Family",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "NTLM",
+    "regex": "^[a-f0-9]{32}$",
+    "description": "NT LAN Manager hash",
+    "category": "Windows",
+    "confidence_weight": 0.5
+  },
+  {
+    "name": "bcrypt",
+    "regex": "^\\$2[ayb]\\$\\d{2}\\$[./A-Za-z0-9]{53}$",
+    "description": "Blowfish-based password hashing function",
+    "category": "Password Hash",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "Argon2",
+    "regex": "^\\$argon2[id]?\\$v=\\d+\\$m=\\d+,t=\\d+,p=\\d+\\$[A-Za-z0-9+/]{22,}\\$[A-Za-z0-9+/]{22,}$",
+    "description": "Argon2 key derivation function",
+    "category": "Password Hash",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "scrypt",
+    "regex": "^\\$scrypt\\$n=\\d+,r=\\d+,p=\\d+\\$[A-Za-z0-9+/]+\\$[A-Za-z0-9+/]+$",
+    "description": "Scrypt key derivation function",
+    "category": "Password Hash",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "MySQL323",
+    "regex": "^[a-f0-9]{16}$",
+    "description": "MySQL 3.2.3 hash",
+    "category": "Database",
+    "confidence_weight": 0.8
+  },
+  {
+    "name": "MySQL41",
+    "regex": "^\\*[a-f0-9]{40}$",
+    "description": "MySQL 4.1+ hash",
+    "category": "Database",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "PostgreSQL",
+    "regex": "^md5[a-f0-9]{32}$",
+    "description": "PostgreSQL MD5 hash",
+    "category": "Database",
+    "confidence_weight": 1.0
+  },
+  {
+    "name": "JWT",
+    "regex": "^[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+$",
+    "description": "JSON Web Token",
+    "category": "Web",
+    "confidence_weight": 0.7
+  }
+]
