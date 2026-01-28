@@ -20,8 +20,11 @@ dependencies = [
 ]
 
 [project.scripts]
-pxhash = "main:app"
+pxhash = "pxhash.main:app"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["pxhash*"]
+
+[tool.setuptools.package-data]
+pxhash = ["signatures/*.json"]
