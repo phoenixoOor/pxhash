@@ -57,7 +57,7 @@
   },
   {
     "name": "Argon2",
-    "regex": "^\\$argon2[id]?\\$v=\\d+\\$m=\\d+,t=\\d+,p=\\d+\\$[A-Za-z0-9+/]{22,}\\$[A-Za-z0-9+/]{22,}$",
+    "regex": "^\\$argon2(id|i|d)\\$v=\\d+\\$m=\\d+,t=\\d+,p=\\d+\\$[A-Za-z0-9+/]{8,}\\$[A-Za-z0-9+/]{16,}$",
     "description": "Argon2 key derivation function",
     "category": "Password Hash",
     "confidence_weight": 1.0

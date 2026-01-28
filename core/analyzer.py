@@ -1,7 +1,7 @@
 from typing import List, Optional
-from pxhash.models import AnalysisResult, IdentificationMatch
-from pxhash.core.identifier import HashIdentifier
-from pxhash.core.entropy import calculate_shannon_entropy, analyze_character_set
+from models import AnalysisResult, IdentificationMatch
+from core.identifier import HashIdentifier
+from core.entropy import calculate_shannon_entropy, analyze_character_set
 
 class HashAnalyzer:
     def __init__(self):

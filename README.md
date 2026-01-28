@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ### Identify a single hash
 ```bash
-python -m pxhash.main identify 5e543256c480ac577d30f76f9120eb74
+python -m main.py identify 5e543256c480ac577d30f76f9120eb74
 ```
 
 ### Analyze a file of hashes
@@ -36,7 +36,7 @@ python -m pxhash.main analyze hashes.txt --json
 
 ### Pipe from STDIN
 ```bash
-echo "5e543256c480ac577d30f76f9120eb74" | python -m pxhash.main detect
+echo "5e543256c480ac577d30f76f9120eb74" | python -m main.py detect
 ```
 
 ## Supported Hash Types

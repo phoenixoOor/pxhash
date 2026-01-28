@@ -1,10 +1,10 @@
 import re
 import json
 from typing import List
-from pxhash.models import HashSignature, IdentificationMatch
-from pxhash.config import SIGNATURES_PATH
-from pxhash.core.confidence import calculate_confidence
-from pxhash.logger import logger
+from models import HashSignature, IdentificationMatch
+from config import SIGNATURES_PATH
+from core.confidence import calculate_confidence
+from logger import logger
 
 class HashIdentifier:
     def __init__(self):

@@ -20,7 +20,7 @@ dependencies = [
 ]
 
 [project.scripts]
-pxhash = "pxhash.main:app"
+pxhash = "main:app"
 
 [tool.setuptools.packages.find]
 where = ["."]

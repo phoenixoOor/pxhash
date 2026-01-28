@@ -7,9 +7,9 @@ from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
 
-from pxhash.core.analyzer import HashAnalyzer
-from pxhash.models import AnalysisResult, BatchResult
-from pxhash.logger import logger
+from core.analyzer import HashAnalyzer
+from models import AnalysisResult, BatchResult
+from logger import logger
 
 app = typer.Typer(help="Phoenix Hash Identification & Analysis Framework")
 console = Console()

@@ -1,5 +1,5 @@
 from typing import List
-from pxhash.models import HashSignature
+from models import HashSignature
 
 def calculate_confidence(hash_string: str, signature: HashSignature) -> float:
     """
